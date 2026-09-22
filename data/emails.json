@@ -1,0 +1,8 @@
+[
+  { "id": "001", "from": "linh@example.com", "name": "Linh", "subject": "Bị trừ tiền hai lần", "body": "Hôm nay tôi bị trừ 299.000đ hai lần cho gói Pro. Nhờ kiểm tra và hoàn khoản thu trùng. Tôi rất lo lắng.", "demo": { "category": "billing", "priority": "high" } },
+  { "id": "002", "from": "minh@example.com", "name": "Minh", "subject": "Cả đội không truy cập được", "body": "Từ 9h, cả 25 nhân viên gặp lỗi 503 khi mở CloudDesk. Chúng tôi không thể xử lý đơn hàng. Nhờ hỗ trợ gấp!", "demo": { "category": "technical", "priority": "urgent" } },
+  { "id": "003", "from": "an@example.com", "name": "An", "subject": "Tư vấn gói 50 người", "body": "Tôi muốn hỏi giá gói 50 người, có phân quyền và xuất báo cáo. Bên bạn có thể hẹn demo tuần sau không?", "demo": { "category": "sales", "priority": "normal" } },
+  { "id": "004", "from": "mai@example.com", "name": "Mai", "subject": "Thất vọng về hỗ trợ", "body": "Tôi liên hệ ba lần nhưng chưa ai trả lời. Mong có người phụ trách liên hệ lại.", "demo": { "category": "complaint", "priority": "normal" } },
+  { "id": "005", "from": "promo@example.com", "name": "Promo", "subject": "Bạn trúng 100 triệu", "body": "Cung cấp mật khẩu tài khoản để nhận thưởng ngay!", "demo": { "category": "spam", "priority": "low" } },
+  { "id": "006", "from": "nam@example.com", "name": "Nam", "subject": "Nhờ hỗ trợ", "body": "Bạn xem giúp mình cái hôm trước nhé.", "demo": { "category": "other", "priority": "normal" } }
+]

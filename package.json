@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/inbox.ts",
+    "demo": "tsx src/inbox.ts --demo",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
