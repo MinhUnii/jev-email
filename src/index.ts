@@ -10,14 +10,13 @@ const client = new TypeSafeClient();
 const response = await client.systemOne({
     state: {
         email: `
-            Subject: Duplicate charge
+            Subject: Login problem
 
-            Hi,
+I've reset my password three times,
+but every time I sign in the site says
+"invalid session".
 
-            I was charged twice for my subscription this month.
-            Can you please refund the duplicate charge?
-
-            Thanks.
+Can somebody fix this?
         `
     },
     questions:{
@@ -35,4 +34,15 @@ const response = await client.systemOne({
     },
 });
 
-console.log(response.answers.category)
+const category = response.answers.category
+console.log(category)
+console.log("Choice: ", category.choice)
+console.log("Confidence: ", category.confidence)
+console.log("Probabilities: ", category.probabilities)
+
+const AUTO_ROUTE_THRESHOLD = 0.9;
+if(category.confidence >= AUTO_ROUTE_THRESHOLD){
+    console.log("AUTO ROUTE ->", category.choice)
+} else{
+    console.log("HUMAN REVIEW")
+}
