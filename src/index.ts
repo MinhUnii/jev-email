@@ -1,7 +1,7 @@
 import "dotenv/config";
 
 import { emails } from "./email";
-import { classifyEmail } from "./router";
+import { classifyEmail } from "./jev";
 import { decideRouting } from "./policy";
 
 for (const email of emails) {
@@ -16,6 +16,7 @@ for (const email of emails) {
 
     console.log("Jev choice: ", result.choice);
     console.log("Jev confidence: ", result.confidence);
+    console.log("Jev probabilities: ", result.probabilities);
     console.log("Action: ", routing.action);
     console.log("Destination: ", routing.destination);
     console.log("===============================\n");

@@ -57,7 +57,7 @@ I'm thinking about upgrading to enterprise,
 but I also noticed an incorrect charge on my account.
 Can someone contact me?
     `,
-    expected: "ambiguous",
+    expected: "billing",
   },
 
   {
